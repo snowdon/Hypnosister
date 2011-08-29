@@ -21,11 +21,11 @@
 		15D588B2140B54D40027D4A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15D588B4140B54D40027D4A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15D588B6140B54D40027D4A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		15D588BA140B54D40027D4A0 /* Hypnosister-Info.plist */ = {isa = PBXFileReference; path = "Hypnosister-Info.plist"; sourceTree = "<group>"; };
+		15D588BA140B54D40027D4A0 /* Hypnosister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hypnosister-Info.plist"; sourceTree = "<group>"; };
 		15D588BC140B54D40027D4A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15D588BE140B54D40027D4A0 /* Hypnosister-Prefix.pch */ = {isa = PBXFileReference; path = "Hypnosister-Prefix.pch"; sourceTree = "<group>"; };
+		15D588BE140B54D40027D4A0 /* Hypnosister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hypnosister-Prefix.pch"; sourceTree = "<group>"; };
 		15D588BF140B54D40027D4A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		15D588C1140B54D40027D4A0 /* HypnosisterAppDelegate.h */ = {isa = PBXFileReference; path = HypnosisterAppDelegate.h; sourceTree = "<group>"; };
+		15D588C1140B54D40027D4A0 /* HypnosisterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HypnosisterAppDelegate.h; sourceTree = "<group>"; };
 		15D588C2140B54D40027D4A0 /* HypnosisterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterAppDelegate.m; sourceTree = "<group>"; };
 		15D588C5140B54D40027D4A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */

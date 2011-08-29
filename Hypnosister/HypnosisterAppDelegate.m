@@ -20,16 +20,46 @@
     
     CGRect wholeWindow = [[self window] bounds];
     
-    view = [[HypnosisView alloc] initWithFrame:wholeWindow];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:wholeWindow];
+    [[self window] addSubview:scrollView];
+    
+    CGRect reallyBigRect;
+    reallyBigRect.origin = CGPointZero;
+    reallyBigRect.size.width = wholeWindow.size.width * 2.0;
+    reallyBigRect.size.height = wholeWindow.size.height * 2.0;
+    [scrollView setContentSize:reallyBigRect.size];
+    
+    CGPoint offset;
+    offset.x = wholeWindow.size.width * 0.5;
+    offset.y = wholeWindow.size.height * 0.5;
+    [scrollView setContentOffset:offset];
+    
+    //zooming
+    [scrollView setMinimumZoomScale:0.5];
+    [scrollView setMaximumZoomScale:5];
+    [scrollView setDelegate:self];
+    
+    
+    view = [[HypnosisView alloc] initWithFrame:reallyBigRect];
     
     [view setBackgroundColor:[UIColor clearColor]];
     
-    [[self window] addSubview:view];
-
+    [scrollView addSubview:view];
+    
+    [scrollView release];
+    
+    //hide status bar
+    [[UIApplication sharedApplication] setStatusBarHidden:YES
+                                            withAnimation:UIStatusBarAnimationFade];
     
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return view;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

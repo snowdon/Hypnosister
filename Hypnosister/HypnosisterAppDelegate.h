@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class HynosisView;
 
 @interface HypnosisterAppDelegate : NSObject <UIApplicationDelegate> {
+    HynosisView *view;
 
 }
 
